@@ -33,7 +33,7 @@ The **Chalan Management System** is a Laravel-based web application designed to 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/chalan-management-system.git
+git clone https://github.com/taimoorali-code/chalanmanagment.git
 cd chalanmanagment
 ```
 
@@ -78,7 +78,15 @@ This will create the necessary database tables and insert initial data for roles
 ```bash
 php artisan migrate --seed
 ```
+Or you can manually add migrations and seeders
 
+```bash
+php artisan migrate:fresh
+```
+
+```bash
+php artisan db:seed
+```
 ### Step 6: Install Laravel Breeze
 
 To set up authentication and basic routes, install Laravel Breeze:
