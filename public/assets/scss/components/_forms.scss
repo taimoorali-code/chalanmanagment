@@ -1,0 +1,106 @@
+.form-group {
+  label {
+    margin-bottom: 6px;
+  }
+
+  &.input-icon {
+    position: relative;
+
+    .form-control {
+      padding-left: 34px;
+    }
+
+    i {
+      position: absolute;
+      top: 7px;
+      left: 10px;
+    }
+  }
+}
+
+.rate {
+  &:not(:checked) {
+    > input {
+      position: absolute;
+      top: -9999px;
+    }
+    > label {
+      float: right;
+      width: 1em;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: 30px;
+      color: #999999;
+      &:before {
+        content: "★ ";
+      }
+      &:hover {
+        color: $yellow;
+        ~ {
+          label {
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+  > input {
+    &:checked {
+      ~ {
+        label {
+          color: #ffc700;
+          &:hover {
+            color: #c59b08;
+            ~ {
+              label {
+                color: #c59b08;
+              }
+            }
+          }
+        }
+      }
+      + {
+        label {
+          &:hover {
+            color: #c59b08;
+            ~ {
+              label {
+                color: #c59b08;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  > label {
+    &:hover {
+      ~ {
+        input {
+          &:checked {
+            ~ {
+              label {
+                color: #c59b08;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-check-input:checked {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.reg-form {
+  background-color: #e8f0ff;
+}
+.form-pre-reg {
+  background-color: white;
+  padding: 50px;
+  border-radius: $radius;
+}
