@@ -34,7 +34,7 @@ The **Chalan Management System** is a Laravel-based web application designed to 
 
 ```bash
 git clone https://github.com/your-username/chalan-management-system.git
-cd chalan-management-system
+cd chalanmanagment
 ```
 
 ### Step 2: Install Dependencies
